@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 //TODO REFACTOR THIS COMPONENT
+//TODO RECHOOSE COLORS IN TW PALETTE
 const PasswordStrength = ({ password, checkboxes }) => {
   const [strength, setStrength] = useState("");
   const [barColor, setBarColor] = useState("");
