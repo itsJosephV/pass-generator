@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+//TODO REFACTOR THIS COMPONENT
 const PasswordStrength = ({ password, checkboxes }) => {
   const [strength, setStrength] = useState("");
   const [barColor, setBarColor] = useState("");
