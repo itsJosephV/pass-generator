@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 const PasswordOptions = ({ checkboxes, handleCheckboxChange }) => {
   return (
       <section className="mb-5">

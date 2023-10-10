@@ -1,7 +1,6 @@
 import toast from "react-hot-toast";
 import { CopyIcon } from "../../icons";
 
-// eslint-disable-next-line react/prop-types
 const CopyButton = ({ password }) => {
   const notify = () => toast.success("Password copied to clipboard!");
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 //TODO REFACTOR THIS COMPONENT
-//TODO RECHOOSE COLORS IN TW PALETTE
+//TODO CALCULATE STRENGTH INCLUDING CB OPTIONS CHECKED 🐢
 const PasswordStrength = ({ password, checkboxes }) => {
   const [strength, setStrength] = useState("");
   const [barColor, setBarColor] = useState("");
@@ -13,28 +13,28 @@ const PasswordStrength = ({ password, checkboxes }) => {
       value: "20%",
       minLength: 6,
       maxLength: 8,
-      color: "red",
+      color: "#ef4444",
     },
     {
       strength: "Normal",
       value: "50%",
       minLength: 9,
       maxLength: 11,
-      color: "orange",
+      color: "#fb923c",
     },
     {
       strength: "Medium",
       value: "70%",
       minLength: 12,
       maxLength: 15,
-      color: "blue",
+      color: "#3b82f6",
     },
     {
       strength: "Strong",
       value: "100%",
       minLength: 16,
       maxLength: 20,
-      color: "green",
+      color: "#22c55e",
     },
   ];
   // console.log(checkboxes)
@@ -60,11 +60,12 @@ const PasswordStrength = ({ password, checkboxes }) => {
     );
     setBarColor(
       passLength <= strengthDictionary[0].maxLength
-        ? "red"
+        ? "#ef4444"
         : strengthDictionary.find(
             (entry) => entry.strength === selectedStrength
           ).color
     );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [password]);
 
   // console.log(width);
@@ -74,7 +75,7 @@ const PasswordStrength = ({ password, checkboxes }) => {
       <div className="flex justify-between items-center gap-2">
         {strength ? (
           <div
-            className={`border-[2px] border-red-400  rounded-sm`}
+            className={`border-[2px] rounded-sm`}
             style={{ width: `${width}`, border: `2px solid ${barColor}` }}
           />
         ) : null}

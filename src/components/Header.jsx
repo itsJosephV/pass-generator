@@ -12,10 +12,10 @@ const Header = () => {
         </h1>
       </div>
       <a
-        href="https://github.com/itsJosephV"
+        href="https://github.com/itsJosephV/pass-generator"
         rel="noreferrer"
         target="_blank"
-        className="font-mono text-[13px] text-zinc-500"
+        className="font-mono text-[13px] text-zinc-500 hover:text-zinc-300 duration-200"
       >
         source
       </a>
