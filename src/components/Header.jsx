@@ -3,9 +3,9 @@ import { KeyIcon } from "../icons";
 const Header = () => {
   return (
     <header className="flex justify-between mb-5 items-center">
-      <div className="flex gap-2">
-        <div className="text-emerald-300 bg-emerald-400 px-[2px] flex items-center rounded-md">
-          <KeyIcon width={"1.5em"} height={"1.5em"} fill={"white"} />
+      <div className="flex items-center gap-2">
+        <div className="border border-emerald-300 px-[2px] flex items-center rounded-md">
+          <KeyIcon width={"1.5em"} height={"1.5em"} fill={"#86efac"} />
         </div>
         <h1 className="font-bold tracking-wide">
           Pass<span className="text-emerald-300">G</span>
