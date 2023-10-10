@@ -17,7 +17,7 @@ const Header = () => {
         target="_blank"
         className="font-mono text-[13px] text-zinc-500 hover:text-zinc-300 duration-200"
       >
-        source
+        /Source
       </a>
     </header>
   );

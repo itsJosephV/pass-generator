@@ -6,7 +6,6 @@ const PasswordLength = ({
   handlePlusButton,
   setLength,
 }) => {
-
   const buttonStyles =
     "border border-emerald-300 h-[20px] flex items-center w-[20px] rounded-md justify-center hover:bg-emerald-900 duration-200";
 
@@ -24,7 +23,7 @@ const PasswordLength = ({
           max={20}
           value={length}
           className="range range-sm w-[240px] range-success"
-          onChange={(e) => setLength(+e.target.value)} //Convert to number to "sum"
+          onChange={(e) => setLength(+e.target.value)} //Parse to number to "sum"
         />
         <button onClick={handlePlusButton} className={`${buttonStyles} ml-2`}>
           <PlusIcon width={".8em"} height={".8em"} fill={"#6ee7b7"} />

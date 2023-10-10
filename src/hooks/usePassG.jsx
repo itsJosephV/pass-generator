@@ -1,5 +1,5 @@
 import { useState } from "react";
-import toast from "react-hot-toast";
+import notify from "../components/toast/Toast";
 
 export const usePassG = () => {
   const [password, setPassword] = useState("");
@@ -10,13 +10,7 @@ export const usePassG = () => {
     const selectedOptions = cbOptions.filter(({ state }) => state);
 
     if (selectedOptions.length === 0) {
-      toast.error("Select at least one option!", {
-        style: {
-          background: "#09090b",
-          color: "#fff",
-          border: "1px solid #404040",
-        },
-      });
+      notify('Select at least one option!')
       setPassword("");
       return;
     }

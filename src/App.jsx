@@ -4,10 +4,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { usePassG } from "./hooks/usePassG";
 import { AppWrapper } from "./components/wrappers/AppWrapper";
-import PasswordOptions from "./components/inputOptions/PasswordOptions";
+import PasswordOptions from "./components/inputs/PasswordOptions";
 import GenerateButton from "./components/buttons/GenerateButton";
 import PasswordField from "./components/password/PasswordField";
-import PasswordLength from "./components/inputOptions/PasswordLength";
+import PasswordLength from "./components/inputs/PasswordLength";
 import MainWrapper from "./components/wrappers/MainWrapper";
 
 function App() {

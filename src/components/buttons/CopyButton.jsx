@@ -1,14 +1,7 @@
-import toast from "react-hot-toast";
 import { CopyIcon } from "../../icons";
+import notify from "../toast/Toast";
 
 const CopyButton = ({ password }) => {
-  const notify = () => toast.success("Password copied to clipboard!", {
-    style: {
-      background: '#09090b',
-      color: '#fff',
-      border: '1px solid #404040'
-    }
-  });
 
   const handleCopyButton = () => {
     return navigator.clipboard.writeText(password);
@@ -24,7 +17,7 @@ const CopyButton = ({ password }) => {
         role="submit"
         onClick={() => {
           handleCopyButton();
-          notify();
+          notify('Password added to clipboard');
         }}
         disabled={!password}
       >
