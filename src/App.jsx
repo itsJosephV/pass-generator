@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { checkboxData } from "./data/checkboxData";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import { usePassG } from "./hooks/usePassG";
 import { AppWrapper } from "./components/wrappers/AppWrapper";
-import PasswordOptions from "./components/inputs/PasswordOptions";
-import GenerateButton from "./components/buttons/GenerateButton";
+import Header from "./components/Header";
 import PasswordField from "./components/password/PasswordField";
 import PasswordLength from "./components/inputs/PasswordLength";
-import MainWrapper from "./components/wrappers/MainWrapper";
+import PasswordOptions from "./components/inputs/PasswordOptions";
+import GenerateButton from "./components/buttons/GenerateButton";
+import Footer from "./components/Footer";
+import { MainWrapper } from "./components/wrappers/MainWrapper";
+import { usePassG } from "./hooks/usePassG";
+import { checkboxData } from "./data/checkboxData";
 
 function App() {
   const [length, setLength] = useState(6);

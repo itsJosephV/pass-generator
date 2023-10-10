@@ -10,7 +10,7 @@ export const usePassG = () => {
     const selectedOptions = cbOptions.filter(({ state }) => state);
 
     if (selectedOptions.length === 0) {
-      notify('Select at least one option!')
+      notify('Select at least one option!', "error")
       setPassword("");
       return;
     }

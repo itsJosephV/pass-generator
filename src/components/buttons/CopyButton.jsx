@@ -17,7 +17,7 @@ const CopyButton = ({ password }) => {
         role="submit"
         onClick={() => {
           handleCopyButton();
-          notify('Password added to clipboard');
+          notify('Password added to clipboard', "success");
         }}
         disabled={!password}
       >
