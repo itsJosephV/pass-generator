@@ -10,7 +10,13 @@ export const usePassG = () => {
     const selectedOptions = cbOptions.filter(({ state }) => state);
 
     if (selectedOptions.length === 0) {
-      toast.error('Select at least one option!')
+      toast.error("Select at least one option!", {
+        style: {
+          background: "#09090b",
+          color: "#fff",
+          border: "1px solid #404040",
+        },
+      });
       setPassword("");
       return;
     }
