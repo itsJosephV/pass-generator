@@ -18,5 +18,4 @@ const notify = (message, type = "") => {
       break;
   }
 };
-// toast.success(message, { style: toastStyle })
 export default notify;
